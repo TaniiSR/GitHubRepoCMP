@@ -1,0 +1,21 @@
+CREATE TABLE TrendingRepoEntity (
+    position INTEGER NOT NULL PRIMARY KEY,
+    id INTEGER NOT NULL,
+    name TEXT NOT NULL,
+    fullName TEXT NOT NULL,
+    description TEXT,
+    language TEXT,
+    stars INTEGER NOT NULL,
+    ownerLogin TEXT NOT NULL,
+    ownerAvatarUrl TEXT
+);
+
+selectAll:
+SELECT * FROM TrendingRepoEntity ORDER BY position ASC;
+
+insertRepo:
+INSERT OR REPLACE INTO TrendingRepoEntity(position, id, name, fullName, description, language, stars, ownerLogin, ownerAvatarUrl)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+deleteAll:
+DELETE FROM TrendingRepoEntity;
