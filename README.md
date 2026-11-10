@@ -9,6 +9,11 @@ Kotlin Multiplatform, Compose Multiplatform and MVI.
 - Tap a row to expand description, language and star count
 - Typed error handling with the original error copy, Lottie error view and Retry
 
+## Demo Video
+
+https://github.com/user-attachments/assets/9568ed9e-8c8c-41ad-b558-873463dea277
+
+
 ## Tech stack
 Kotlin 2.4 - Compose Multiplatform - MVI - Ktor (OkHttp / Darwin) - kotlinx.serialization -
 Koin - SQLDelight (offline cache) - Coil 3 - Compottie (Lottie) - AndroidX Lifecycle ViewModel
